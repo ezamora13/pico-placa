@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="348.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.empresa.ejemplo.pico.placa.FXMLController">
+    <children>
+      <TitledPane animated="false" layoutX="24.0" layoutY="14.0" prefHeight="245.0" prefWidth="329.0" text="Datos del Vehiculo">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="294.0">
+               <children>
+                  <Label layoutX="74.0" layoutY="14.0" text="Ingrese la placa:" />
+                  <TextField fx:id="txtPlaca" layoutX="76.0" layoutY="44.0" />
+                  <DatePicker fx:id="txtFecha" layoutX="40.0" layoutY="104.0" prefHeight="27.0" prefWidth="116.0" />
+                  <Label layoutX="40.0" layoutY="80.0" text="Fecha:" />
+                  <Label layoutX="188.0" layoutY="80.0" text="Hora(hh:mm:ss):" />
+                  <TextField fx:id="txtHora" layoutX="188.0" layoutY="104.0" prefHeight="27.0" prefWidth="108.0" />
+                    <Button fx:id="button" layoutX="129.0" layoutY="150.0" onAction="#handleButtonAction" text="Verificar" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+    </children>
+</AnchorPane>
